@@ -1,0 +1,15 @@
+GRANT USAGE ON *.* TO `mesero`@`localhost` IDENTIFIED BY PASSWORD '*D436FD644C346DA1E94E24EECB9DCE7B200A61D1';
+
+GRANT SELECT, INSERT, UPDATE ON `proyecto\_smorgas`.* TO `mesero`@`localhost`;
+
+GRANT SELECT, INSERT ON `proyecto_smorgas`.`tbl_fecha` TO `mesero`@`localhost`;
+
+GRANT SELECT, INSERT, UPDATE ON `proyecto_smorgas`.`tbl_detalle` TO `mesero`@`localhost`;
+
+GRANT SELECT ON `proyecto_smorgas`.`tbl_usuarios` TO `mesero`@`localhost`;
+
+GRANT SELECT ON `proyecto_smorgas`.`tbl_producto` TO `mesero`@`localhost`;
+
+GRANT SELECT ON `proyecto_smorgas`.`tbl_modo_entrega` TO `mesero`@`localhost`;
+
+GRANT SELECT, INSERT, UPDATE ON `proyecto_smorgas`.`tbl_compra` TO `mesero`@`localhost`;

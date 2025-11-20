@@ -1,0 +1,15 @@
+GRANT USAGE ON *.* TO `admin`@`localhost` IDENTIFIED BY PASSWORD '*4ACFE3202A5FF5CF467898FC58AAB1D615029441';
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON `proyecto\_smorgas`.* TO `admin`@`localhost`;
+
+GRANT SELECT, DELETE ON `proyecto_smorgas`.`tbl_usuarios` TO `admin`@`localhost`;
+
+GRANT SELECT, INSERT, DELETE ON `proyecto_smorgas`.`tbl_fecha` TO `admin`@`localhost`;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON `proyecto_smorgas`.`tbl_compra` TO `admin`@`localhost`;
+
+GRANT SELECT, DELETE ON `proyecto_smorgas`.`tbl_modo_entrega` TO `admin`@`localhost`;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON `proyecto_smorgas`.`tbl_detalle` TO `admin`@`localhost`;
+
+GRANT SELECT, DELETE ON `proyecto_smorgas`.`tbl_producto` TO `admin`@`localhost`;
