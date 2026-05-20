@@ -317,8 +317,12 @@
   });
 
   btnConfirmDel.addEventListener('click', ()=>{
-    // Mantiene compat con tu ruta GET /delete/<folio> (sin cambiar app.py)
-    window.location.href = delAction;
+    // Envía POST a /delete/<folio> (ruta actualizada en app.py mejorado)
+    const f = document.createElement('form');
+    f.method = 'POST';
+    f.action = delAction;
+    document.body.appendChild(f);
+    f.submit();
   });
 
   // ===== Guardar renglón de detalle: POST /detalle/update/<id> =====
